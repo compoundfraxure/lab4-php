@@ -1,0 +1,12 @@
+/* Aligning figures in one row adapted from example on w3schools.com */
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.column {
+	float: left;
+	width: 24%;
+	padding: 2px;
+}

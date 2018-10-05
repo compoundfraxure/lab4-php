@@ -9,24 +9,45 @@
 		<p>Welcome to Arborist World! We offer the finest selection of tree saplings for purchase at low prices! Whether you want to grow a pear tree, silver maple tree, cottonwood tree, or crab apple tree, you have come to the right place! And if our trees aren't still alive after 50 years*, you pay nothing at all!</p>
 		<small>*Money-back guarantee only applies if tree dies of natural causes. Money-back guarantee is voided if tree is cut down.</small>
 
-		<form action="customerBackEnd.php" method="post" onsubmit="formValidate()">
+		<form onsubmit="return formValidate()">
 			<h3>Select Your Tree</h3>
-			<figure>
-				<img src="img/pear.jpg" width="200px">
-				<figcaption>Pear Tree - $69.00</figcaption>
-			</figure>
-			<figure>
-				<img src="img/pear.jpg" width="200px">
-				<figcaption>Pear Tree - $69.00</figcaption>
-			</figure>
-			<figure>
-				<img src="img/pear.jpg" width="200px">
-				<figcaption>Pear Tree - $69.00</figcaption>
-			</figure>
-			<figure>
-				<img src="img/pear.jpg" width="200px">
-				<figcaption>Pear Tree - $69.00</figcaption>
-			</figure>
+			<div class="row">
+				<div class="column">
+					<figure>
+						<img src="img/pear.jpg" style="width:100%">
+						<figcaption>Pear Tree - $19.00 each<br>Quantity:&nbsp;<input type="number" name="pear" id="pear" min="0" value="0"></figcaption>
+					</figure>
+				</div>
+				<div class="column">
+					<figure>
+						<img src="img/silverMaple.jpg" style="width:100%">
+						<figcaption>Silver Maple Tree - $9.00 each<br>Quantity:&nbsp;<input type="number" name="silverMaple" id="silverMaple" min="0" value="0"></figcaption>
+					</figure>
+				</div>
+				<div class="column">
+					<figure>
+						<img src="img/cottonwood.jpg" style="width:100%">
+						<figcaption>Cottonwood Tree - $12.00 each<br>Quantity:&nbsp;<input type="number" name="cottonwood" id="cottonwood" min="0" value="0"></figcaption>
+					</figure>
+				</div>
+				<div class="column">
+					<figure>
+						<img src="img/crabapple.jpg" style="width:100%">
+						<figcaption>Crabapple Tree - $14.00 each<br>Quantity:&nbsp;<input type="number" name="crabapple" id="crabapple" min="0" value="0"></figcaption>
+					</figure>
+				</div>
+			</div>
+
+			<h3>Select Your Shipping</h3>
+			<input type="radio" name="shipping" value="0"> Free Seven-Day Shipping<br>
+			<input type="radio" name="shipping" value="50"> $50.00 Overnight Shipping<br>
+			<input type="radio" name="shipping" value="5"> $5.00 Three-Day Shipping<br>
+
+			<h3>Create an Account</h3>
+			Username:&nbsp;<input type="email" name="username" id="username"><br>
+			Password:&nbsp;<input type="password" name="pwd" id="pwd"><br>
+			<br>
+			<input type="submit" value="Submit">&nbsp;<input type="reset" value="Reset">
 		</form>
 
 		<script type="text/javascript" src="formChecker.js"></script>
