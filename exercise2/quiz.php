@@ -21,8 +21,8 @@
 
 	echo "Question 2: What is the most recent single released by Bill Wurtz?<br>";
 	echo "You answered: " . $billwurtz . "<br>";
-	echo "The correct answer was: Mt. St. Helens is About to Blow Up<br><br>";
-	if ($billwurtz == "Mt. St. Helens is About to Blow Up") {
+	echo "The correct answer was: The Moon is Made of Cheese (But I Can't Taste It)<br><br>";
+	if ($billwurtz == "The Moon is Made of Cheese (But I Can't Taste It)") {
 		$correct = ++$correct;
 	}
 
