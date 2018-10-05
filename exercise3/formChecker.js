@@ -37,8 +37,8 @@ function formValidate() {
 		pass = false;
 	}
 
-	for (let choice in shipping) {
-		if (choice.checked == true) {
+	for (let i = 0; i < shipping.length; i++) {
+		if (shipping[i].checked) {
 			shipPass = true;
 			break;
 		}
@@ -59,7 +59,7 @@ function formValidate() {
 	}
 
 	if (pass == false) {
-		msg.concat("Please go back and correct your order form.");
+		msg = msg.concat("Please go back and correct your order form.");
 		window.alert(msg);
 	}
 
